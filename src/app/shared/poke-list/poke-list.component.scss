@@ -3,6 +3,7 @@
 $padding: rem-calc(20);
 
 :host{
+  .listagem{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -19,6 +20,9 @@ $padding: rem-calc(20);
     padding: $padding;
 
     border-radius: rem-calc(10);
+
+    text-decoration: none;
+    color: var(--primary-color);
 
     &_status{
        h2{
@@ -55,6 +59,8 @@ $padding: rem-calc(20);
       height: rem-calc(90);
       width: rem-calc(110);
 
+      margin-left: rem-calc(40);
+
       right: $padding;
       bottom: $padding;
 
@@ -62,7 +68,9 @@ $padding: rem-calc(20);
 
       img{
         width: rem-calc(60);
+        // margin-left: rem-calc(60);
       }
     }
+  }
   }
 }
